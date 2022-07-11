@@ -18,3 +18,12 @@ git fetch origin master
 git branch --set-upstream-to=origin/master master
 git pull --rebase
 git push
+
+
+echo "# git_repo" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/umaretiya/flask_FSDS.git
+git push -u origin main
